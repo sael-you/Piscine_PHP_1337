@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+           .table {
+               display: grid;
+               grid-template: repeat(7, 1fr) 1fr 1fr / repeat(18, 1fr);
+               grid-gap: 2px;
+               position: relative;
+           }
+            html{
+                height: 100%;
+            }
+            body{
+                position: relative;
+                height: 100%;
+            }
+            .wrapper{
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items:center;
+            }
+           .atom {
+               position: relative;
+               height: 4vw;
+               width: 4vw;
+               border-radius: 5px;
+           }
+           .topright {
+               position: absolute;
+                margin: 0em;
+                right: 0px;
+                color: white; 
+                font-size: small;
+           }
+           .bottomleft {
+                position: absolute;
+                margin: 0em;
+                text-align: left;
+                color: white; 
+                font-size: small;
+                bottom: 0px;
+                left: 0px;
+           }
+           .center {
+                position: relative;
+                margin: 0em; 
+                text-align: center;
+                top: 5px; 
+                color: white; 
+                font-weight: bold; 
+                font-size: large;
+           }
+           .header {
+               position: absolute;
+               width: 98vw;
+               height: 30%;
+           }
+           .empty {
+               border: none;
+           }
+            @media only screen and (min-width: 1200px) {
+                .atom {
+                    height: 40px;
+                    width: 60px;
+                }
+                .header {
+                    height: 30%;
+                }
+            }
+            .green {
+                background-color: rgba(59, 204, 25, 1);
+            }
+            .yellow {
+                background-color: rgba(235, 184, 0, 1);
+            }
+            .orange { 
+                background-color: rgba(255, 122, 14, 1);
+            }
+            .red {
+                background-color: rgba(208, 47, 48, 1);
+            }
+            .turq {
+                background-color: rgba(5, 127, 146, 1);
+            }
+            .blue {
+                background-color: rgba(51, 180, 255, 1);
+            }
+            .grey {
+                background-color: rgba(174, 191, 199, 1);
+            }
+            .pink {
+                background-color: rgba(237, 107, 130, 1);
+            }
+            .violet {
+                background-color: rgba(189, 81, 149, 1);
+            }
+            .darkgreen {
+                background-color: rgba(0, 184, 133, 1);
+            }
+        </style>
+    </head>
+    <body style="background-color:teal;">
+    <div class="header">
+        <img src="https://steamuserimages-a.akamaihd.net/ugc/940585265772034230/2E214D0C9EC645403AAAC337201FE4BA7E01EA16/" height=50% width="100%">
+    </div>
+    <div class="wrapper">
+        <div class="table">
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="atom blue">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom yellow">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom orange">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="atom darkgreen">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom blue">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom yellow">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom orange">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="atom turq">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom darkgreen">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom blue">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom yellow">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div><div class="atom orange">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div><div class="atom red">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div><div class="atom red">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div><div class="atom red">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div><div class="atom red">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div><div class="atom red">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div><div class="atom red">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div><div class="atom red">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div><div class="atom red">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div><div class="atom red">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div><div class="atom red">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom turq">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom darkgreen">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom darkgreen">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom blue">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom yellow">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom orange">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom red">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom red">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom red">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom red">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom red">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom red">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom red">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom red">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom red">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom red">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom turq">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom turq">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom darkgreen">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom darkgreen">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom blue">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom yellow">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom orange">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="empty">
+            </div>
+            <div class="atom red">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom red">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom red">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom red">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom red">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom red">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom red">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom red">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom red">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom turq">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom turq">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom turq">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom turq">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom darkgreen">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom blue">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom yellow">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom orange">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="empty">
+            </div>
+            <div class="atom red">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom red">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom red">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom red">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom red">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom grey">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom grey">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom grey">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom red">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom grey">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom turq">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom grey">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom grey">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom grey">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom grey">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+            <div class="atom green">
+                <p class="topright">1</p>
+                <p class="center">H</p>
+                <p class="bottomleft">1.008</p>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

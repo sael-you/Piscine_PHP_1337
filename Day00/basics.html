@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basics</title>
+        <style>
+            .h01 {
+                color: white;
+                text-align: center;
+            }
+            body {
+                background-color: pink;
+            }
+            footer {
+                text-align: right;
+                font-family: monospace;
+                font-style: italic;
+            }
+            .main{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+                align-items: center;
+                align-content: center;
+            }
+            .container1, .container2 {
+                display: flex;
+                flex-flow: column wrap;
+                align-items: center;
+                align-content: center;
+                flex-basis: 45%;
+            }
+            .img1 {     
+                order: 0;
+            }
+            .img2 {
+                order: 0;
+            }
+            .img1title {
+                margin-top: 2%;
+                margin-bottom: 2%;
+                order: 1;
+            }
+            .img2title {
+                margin-top: 2%;
+                margin-bottom: 2%;
+                order: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="h01">$ƒ∑∑∂å®´œø˙˜WELCOME‘ÆÆ…Î…ÍÅ®†-</h1>
+        <div class="main">
+            <div class="container1">
+                <img class="img1" src="https://ae01.alicdn.com/kf/HTB1OROcU9zqK1RjSZFL763n2XXaX.png" width="100%">
+                <a class="img1title" href="https://aliexpress.com" target="_blank">Link to aliexpress</a>
+            </div>
+            <div class="container2">
+                <img class="img2" src="https://media.consumeraffairs.com/files/cache/news/Ebay_logo_large.jpg" width="100%">
+                <a class="img2title" href="https://ebay.com" target="_blank">Link to ebay</a>
+            </div>
+        </div>
+        <hr>
+        <footer>© sael-you 2020</footer>
+    </body>
+</html>
