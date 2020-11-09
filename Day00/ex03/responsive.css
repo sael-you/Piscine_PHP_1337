@@ -28,14 +28,14 @@
      margin: 0em;
      right: 0vw;
      color: white; 
-     font-size: 1.2vw;
+     font-size: 0.8vw;
 }
 .bottomleft {
      position: absolute;
      margin: 0em;
      text-align: left;
      color: white; 
-     font-size: 1.2vw;
+     font-size: 0.8vw;
      bottom: 0vw;
 }
 .center {
