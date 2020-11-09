@@ -1,0 +1,185 @@
+body {
+    background-color: rgba(80, 80, 80, 1);
+ }
+.header {
+ position: absolute;
+ display: grid;
+ grid-template-columns: 40% 10% 10% 50%;
+ left: 12.4vw;
+ top: 1vw;
+ width: 75vw;
+ height: 7vw;
+ background-color: rgb(144,144,144);
+ border-radius: 0.6vw;
+ box-shadow:black 10px 10px 10px;
+}
+.main{
+  position: absolute;
+  display: grid;
+  left: 23vw;
+  top: 9vw;
+  width: 54vw;
+  height: 31vw;
+  align-content: center;
+  background-color: rgb(144,144,144);
+  border-radius: 0.6vw;
+ box-shadow:black 10px 10px 10px;
+
+}  
+.aside1 {
+ position: absolute;
+ display: grid;
+ grid-template-rows: repeat(5, 1fr);
+ top: 9vw;
+ left: 14vw;
+ width: 7.3vw;
+ height: 22.7vw;
+ background-color: rgb(144,144,144);
+ border-radius: 0.6vw;
+ box-shadow:black 10px 10px 10px;
+
+}
+.aside2 {
+ position: absolute;
+ display: grid;
+ grid-template-rows: repeat(5, 1fr);
+ top: 9vw;
+ right: 14vw;
+ width: 7.3vw;
+ height: 22.7vw;
+ background-color: rgb(144,144,144);
+ border-radius: 0.6vw;
+ box-shadow:black 10px 10px 10px;
+
+}
+.footer {
+ position: absolute;
+ top: 36vw;
+ left: 10vw;
+ width: 27vw;
+ height: 9vw;
+ padding-left: 0.6vw;
+ padding-top: 0.1vw;
+ background-color: rgba(136, 255, 137, 1);
+ border-radius: 0.6vw;
+ box-shadow:black 10px 10px 10px;
+}
+.inpt {
+  position: relative;
+  top: 1vw;
+}
+.header_tools {
+  position: relative;
+}
+.reload {
+ position: absolute;
+ width: 1vw;
+ right: 21%;
+ top: 7%;
+}
+.close {
+ position: absolute;
+ width: 1vw;
+ right: 21%;
+ bottom: 7%;
+}
+.loupe {
+ position: absolute;
+ top: 1%;
+ right: 8.5vw;
+ width: 14vw;
+}
+.picture_42 {
+ position: absolute;
+ width: 22vw;
+ left: 1vw;
+ top: 0.5vw;
+}
+.picture_cluster {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width: 98%;
+ 
+}
+.arrow {
+ position: absolute;
+ top: 1vw;
+ left: 1.8vw;
+ width: 3.5vw;
+}
+.hand {
+ position: absolute;
+ top: 5.3vw;
+ left: 1.8vw;
+ width: 3.5vw;
+}
+.chat {
+ position: absolute;
+ top: 17.7vw;
+ left: 1.8vw;
+ width: 3.5vw;
+}
+.eye {
+ position: absolute;
+
+ border: 0.3vw red solid;
+ border-radius: 0.3vw;
+ top: 9.3vw;
+ left: 1.5vw;
+ width: 3.5vw;
+}
+.tools {
+ position: absolute;
+ top: 13.5vw;
+ left: 1.8vw;
+ width: 3.5vw;
+}
+.bricks {
+  position: absolute;
+  display: grid;
+  bottom: 10vw;
+  left: 0.5vw;
+  height: 3vw;
+  grid-template-columns: repeat(4,1fr);
+}
+.brick {
+  width: 1.6vw;
+}
+.book {
+  position: absolute;
+  top: 1vw;
+  left: 2vw;
+  width: 3.5vw;
+}
+.towel {
+  position: absolute;
+  left: 2vw;
+  top: 6.5vw;
+  width: 3.5vw;
+}
+p {
+ font-size: 0.8vw;
+ margin:0;
+ font-family: Verdana;
+}
+.formu {
+ width: 20vw;
+ height: 0.5vw;
+}
+
+.chair {
+    position: absolute;
+    top: 18vw;
+    left: 18vw;
+    width: 6vw;
+    height: 11vw;
+}
+
+.mac {
+    position: absolute;
+    top: 17vw;
+    left: 42.3vw;
+    width: 10vw;
+    height: 8vw;
+}

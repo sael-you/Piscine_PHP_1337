@@ -21,32 +21,31 @@
     position: relative;
     height: 4vw;
     width: 4vw;
-    border-radius: 5px;
+    border-radius: 10%;
 }
 .topright {
     position: absolute;
      margin: 0em;
-     right: 0px;
+     right: 0vw;
      color: white; 
-     font-size: small;
+     font-size: 1.2vw;
 }
 .bottomleft {
      position: absolute;
      margin: 0em;
      text-align: left;
      color: white; 
-     font-size: small;
-     bottom: 0px;
-     left: 0px;
+     font-size: 1.2vw;
+     bottom: 0vw;
 }
 .center {
      position: relative;
      margin: 0em; 
      text-align: center;
-     top: 7px; 
+     top: 0.8vw; 
      color: white; 
      font-weight: bold; 
-     font-size: large;
+     font-size: 2vw;
 }
 .header {
     position: absolute;
@@ -56,15 +55,6 @@
 .empty {
     border: none;
 }
- @media only screen and (min-width: 1200px) {
-     .atom {
-         height: 40px;
-         width: 60px;
-     }
-     .header {
-         height: 30%;
-     }
- }
  .green {
      background-color: rgba(59, 204, 25, 1);
  }
