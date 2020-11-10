@@ -1,15 +1,15 @@
 #!/usr/bin/php
 <?php
-    printf("Enter a number: ");
-    $input = trim(fgets(STDIN), "\n\r");
-    $flag = 0;
+   
     while(!(feof(STDIN)))
-    {
-        $counter = 0;
+    { 
+        printf("Enter a number: ");
+        $input = trim(fgets(STDIN), "\n\r");
+        printf("$input\n");
         $flag = 0;
         while($input[$counter])
-        {
-            if($input[$counter] == '-' && flag == 0)
+        {           
+            if($input[$counter] == '-' && $flag == 0 && $counter == 0)
             {
                 $flag++;
                 $counter++;
@@ -18,10 +18,13 @@
                 break ;
             $counter++;
         }
+        
+
         if ($bol)
         {
             $index = strlen($input) - 1;
-            $number = intval($input[$index]);
+            $number = intval($input[$index]); 
+            printf("$number\n");
             if($number % 2 == 0)
                 printf("The number $input is even\n");
             else
@@ -29,9 +32,7 @@
         }
         else
             printf("'$input' is not a number\n");
-        printf("Enter a number: ");
-        $input = rtrim(fgets(STDIN), "\n\r");
-    }
+    }  
     printf("\n");
     exit();
 ?>

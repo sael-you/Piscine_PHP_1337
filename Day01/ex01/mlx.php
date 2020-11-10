@@ -1,10 +1,7 @@
 #!/usr/bin/php
 <?php
-    $counter = 100;
-    while($counter > 0)
-    {
-        printf("XXXXXXXXXX");
-        $counter--;
-    }
+    $counter = 1000;
+    while($counter-- > 0)
+        printf("x");
     printf("\n");
 ?>
