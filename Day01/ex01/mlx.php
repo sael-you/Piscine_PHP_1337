@@ -1,7 +1,5 @@
 #!/usr/bin/php
 <?php
-    $counter = 1000;
-    while($counter-- > 0)
-        printf("x");
-    printf("\n");
+    for($x=0;$x<1000;$x++)echo"x";
+    echo"\n";
 ?>
