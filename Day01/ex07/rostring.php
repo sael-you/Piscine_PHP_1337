@@ -11,4 +11,4 @@ if($argc > 1)
    printf(substr($string, 0, -1));   
    printf("\n"); 
 }
-?> 
+?>
