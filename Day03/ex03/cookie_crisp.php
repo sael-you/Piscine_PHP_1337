@@ -1,14 +1,16 @@
 <?php
-    switch ($_GET["action"])
-    {
-        case "set":
-            setcookie($_GET["name"],$_GET["value"],time() + 3600);
+switch ($_GET['action']) {
+    case 'set':
+        setcookie($_GET['name'], $_GET['value'], time()+3600);
         break;
-        case "del":
-            setcookie($_GET["name"],'',time() - 3600);
+    case 'get':
+            var_dump($_GET);
+            var_dump($_COOKIE);
+            echo !($_COOKIE) ? NULL : $_COOKIE[$_GET['name']]."\n";
         break;
-        case "get":
-                echo $_COOKIE[$_GET["name"]]."\n";
+    case 'del':
+        setcookie($_GET['name'], "", time()-60);
         break;
-    }
+
+}
 ?>
