@@ -1,11 +1,10 @@
-<?php if ($_SERVER['PHP_AUTH_USER'] &&
+<?php
+if ($_SERVER['PHP_AUTH_USER'] &&
         $_SERVER['PHP_AUTH_PW'] && 
         $_SERVER['PHP_AUTH_USER'] === 'zaz' && 
         $_SERVER['PHP_AUTH_PW'] === 'Ilovemylittleponey'):
-?>
-<?php 
     header("Content-Type: text/html"); 
-    $img = 'data:image/png;base64,'.base64_encode(file_get_contents("../img/42.png"))
+    $img = 'data:image/png;base64,'.base64_encode(file_get_contents("../img/42.png"));
 ?>
 <html><body>
 Hello Zaz<br />

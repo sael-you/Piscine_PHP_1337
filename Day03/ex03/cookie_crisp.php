@@ -4,8 +4,6 @@ switch ($_GET['action']) {
         setcookie($_GET['name'], $_GET['value'], time()+3600);
         break;
     case 'get':
-            var_dump($_GET);
-            var_dump($_COOKIE);
             echo !($_COOKIE) ? NULL : $_COOKIE[$_GET['name']]."\n";
         break;
     case 'del':
