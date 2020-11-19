@@ -4,7 +4,7 @@
         $inout ? $pwd++ : $pwd--;
         return (hash('whirlpool', $pwd));
     }
-    if (!(isset($_POST['submit']) && $_POST['submit'] === 'OK') || !(isset($_POST['login']) && $_POST['login']) || !(isset($_POST['passwd']) && $_POST['passwd']))
+    if (!(($_POST['submit']) && $_POST['submit'] === 'OK') || !(($_POST['login']) && $_POST['login']) || !(($_POST['passwd']) && $_POST['passwd']))
         echo "ERROR\n";
     else
     {

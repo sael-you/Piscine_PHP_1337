@@ -5,7 +5,7 @@
         return (hash('whirlpool', $pwd));
     }
     $flag = 0;
-    if (!(isset($_POST['submit']) && $_POST['submit'] === 'OK') || !(isset($_POST['login']) && $_POST['login']) || !(isset($_POST['oldpw']) && $_POST['oldpw']) || !(isset($_POST['newpw']) && $_POST['newpw']))
+    if (!(($_POST['submit']) && $_POST['submit'] === 'OK') || !(($_POST['login']) && $_POST['login']) || !(($_POST['oldpw']) && $_POST['oldpw']) || !(($_POST['newpw']) && $_POST['newpw']))
         echo "ERROR\n";
     else
     {
